@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>S Afnan Yasar | Portfolio</title>
+<meta name="description" content="Portfolio of S Afnan Yasar - B.Tech CSE Student & Aspiring Developer">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="scrollProgress" class="scroll-progress"></div>
+<canvas id="bgCanvas"></canvas>
+<div id="customCursor" class="custom-cursor"></div>
+<div id="customCursorRing" class="custom-cursor-ring"></div>
+
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar" id="navbar">
+  <div class="container nav-inner">
+    <a href="#home" class="logo">SAY<span>.</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home" class="nav-link">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#achievements" class="nav-link">Achievements</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ================= HERO ================= -->
+<header class="hero" id="home">
+  <div class="hero-grid"></div>
+  <div class="container hero-content">
+    <div class="hero-eyebrow reveal"><span class="dot"></span> Available for opportunities</div>
+    <div class="hero-avatar reveal">
+      <img src="profile.jpg" alt="S Afnan Yasar">
+    </div>
+    <h1 class="reveal">Hi, I'm <span class="highlight">S Afnan Yasar</span></h1>
+    <p class="hero-tagline mono reveal"><span id="typewriter"></span><span class="cursor">&nbsp;</span></p>
+    <p class="hero-location mono reveal">📍 Chennai, Tamil Nadu</p>
+    <p class="hero-objective reveal">
+      As a passionate first-year engineering student, I am eager to offer meaningful contributions to the
+      workplace by taking on responsibilities that aid team growth. I am driven to learn, adapt, and
+      develop a strong technical skillset.
+    </p>
+    <div class="hero-actions reveal">
+      <a href="#projects" class="btn btn-primary">View Projects</a>
+      <a href="#contact" class="btn btn-outline">Get In Touch</a>
+    </div>
+  </div>
+</header>
+
+<!-- ================= ABOUT & EDUCATION ================= -->
+<section id="about">
+  <div class="container">
+    <span class="section-tag reveal">About</span>
+    <h2 class="section-title reveal">About Me & <span>Education</span></h2>
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <p>
+          I'm a first-year B.Tech Computer Science student based in Chennai, currently building my foundation
+          across programming, web development, and data-driven applications. I enjoy turning ideas into working
+          software — from backend database systems to interactive frontend experiences.
+        </p>
+        <p>
+          Outside of code, I bring creative skills like photography, photo editing, and poster design to the
+          table, and I'm fluent in four languages with basic proficiency in a fifth — which makes collaboration
+          and communication a strength of mine.
+        </p>
+      </div>
+
+      <div class="reveal">
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="year mono">Expected 2029</div>
+            <h4>B.Tech, Computer Science Engineering</h4>
+            <div class="school">SRM Institute of Science and Technology, Ramapuram — 1st Year</div>
+          </div>
+          <div class="timeline-item">
+            <div class="year mono">2025</div>
+            <h4>Class XII (CBSE)</h4>
+            <div class="school">Unity Public School, Kotturpuram</div>
+            <span class="score">70%</span>
+          </div>
+          <div class="timeline-item">
+            <div class="year mono">2023</div>
+            <h4>Class X (CBSE)</h4>
+            <div class="school">Unity Public School, Kotturpuram</div>
+            <span class="score">72%</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SKILLS ================= -->
+<section id="skills">
+  <div class="container">
+    <span class="section-tag reveal">What I Work With</span>
+    <h2 class="section-title reveal">Technical <span>Skills</span></h2>
+    <div class="skills-grid">
+      <div class="card skill-card reveal">
+        <h3><span class="icon-dot"></span>Programming Languages</h3>
+        <div class="tag-list">
+          <span class="tag tag-prog">Python</span><span class="tag tag-prog">C</span><span class="tag tag-prog">JavaScript</span>
+          <span class="tag tag-prog">HTML</span><span class="tag tag-prog">CSS</span><span class="tag tag-prog">MySQL</span>
+        </div>
+      </div>
+      <div class="card skill-card reveal">
+        <h3><span class="icon-dot"></span>Frameworks</h3>
+        <div class="tag-list">
+          <span class="tag tag-frame">React</span>
+        </div>
+      </div>
+      <div class="card skill-card reveal">
+        <h3><span class="icon-dot"></span>Tools & Software</h3>
+        <div class="tag-list">
+          <span class="tag tag-tool">Canva</span><span class="tag tag-tool">MS Word</span>
+          <span class="tag tag-tool">Excel</span><span class="tag tag-tool">PowerPoint</span>
+        </div>
+      </div>
+      <div class="card skill-card reveal">
+        <h3><span class="icon-dot"></span>Creative Skills</h3>
+        <div class="tag-list">
+          <span class="tag tag-creative">Photography</span><span class="tag tag-creative">Photo Editing</span><span class="tag tag-creative">Poster Making</span>
+        </div>
+      </div>
+      <div class="card skill-card reveal">
+        <h3><span class="icon-dot"></span>Languages Spoken</h3>
+        <div class="tag-list">
+          <span class="tag tag-lang">English</span><span class="tag tag-lang">Tamil</span><span class="tag tag-lang">Hindi</span>
+          <span class="tag tag-lang">Urdu (Fluent)</span><span class="tag tag-lang">Arabic (Basic)</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROJECTS ================= -->
+<section id="projects">
+  <div class="container">
+    <span class="section-tag reveal">Portfolio</span>
+    <h2 class="section-title reveal">Featured <span>Projects</span></h2>
+    <div class="projects-grid">
+
+      <div class="card project-card reveal">
+        <div class="project-number mono">01</div>
+        <h3>Employee Management System</h3>
+        <p>A backend database management application built to efficiently organize, store, and retrieve
+          employee records for an organization.</p>
+        <div class="project-tags">
+          <span>Python</span><span>MySQL</span>
+        </div>
+        <a href="https://github.com/yasar2008" target="_blank" rel="noopener" class="project-link">View on GitHub →</a>
+      </div>
+
+      <div class="card project-card reveal">
+        <div class="project-number mono">02</div>
+        <h3>Anthenafit Readiness</h3>
+        <p>A full-stack web application handling data processing and readiness metrics, built with a React
+          frontend and a Python backend.</p>
+        <div class="project-tags">
+          <span>React</span><span>Python</span><span>Full-Stack</span>
+        </div>
+        <a href="https://github.com/yasar2008" target="_blank" rel="noopener" class="project-link">View on GitHub →</a>
+      </div>
+
+      <div class="card project-card reveal">
+        <div class="project-number mono">03</div>
+        <h3>Mock IPL Auction</h3>
+        <p>A frontend web application simulating a live cricket auction environment, built with pure HTML,
+          CSS, and JavaScript.</p>
+        <div class="project-tags">
+          <span>HTML</span><span>CSS</span><span>JavaScript</span>
+        </div>
+        <a href="https://github.com/yasar2008" target="_blank" rel="noopener" class="project-link">View on GitHub →</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= ACHIEVEMENTS ================= -->
+<section id="achievements">
+  <div class="container">
+    <span class="section-tag reveal">Recognition</span>
+    <h2 class="section-title reveal">Achievements & <span>Leadership</span></h2>
+    <div class="achieve-grid">
+      <div class="card achieve-card reveal">
+        <div class="achieve-icon">🏆</div>
+        <h4>SRM Hackathon — 10th Place</h4>
+        <p>Secured 10th place at the SRM Kattankulathur Hackathon (offline round).</p>
+      </div>
+      <div class="card achieve-card reveal">
+        <div class="achieve-icon">💻</div>
+        <h4>SRM Hackathon — 18th Place</h4>
+        <p>Secured 18th place at the SRM Kattankulathur Hackathon (online round).</p>
+      </div>
+      <div class="card achieve-card reveal">
+        <div class="achieve-icon">🎓</div>
+        <h4>School Pupil Leader</h4>
+        <p>Appointed School Pupil Leader (SPL) at Unity Public School in 2024.</p>
+      </div>
+      <div class="card achieve-card reveal">
+        <div class="achieve-icon">🎙️</div>
+        <h4>Best Host in Hindi</h4>
+        <p>Awarded "Best Host in Hindi" by Unity Public School in 2023.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact">
+  <div class="container">
+    <span class="section-tag reveal">Get In Touch</span>
+    <h2 class="section-title reveal">Contact <span>Me</span></h2>
+    <div class="contact-grid">
+      <div class="reveal">
+        <p style="color:var(--text-secondary); max-width: 480px;">
+          Have an opportunity, project, or just want to connect? Reach out through any of the channels below
+          or send a message directly.
+        </p>
+        <div class="contact-info-list">
+          <a class="card contact-info-item" href="tel:+916383475990">
+            <div class="contact-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </div>
+            <div>
+              <div class="label">Phone</div>
+              <span class="value">+91 63834 75990</span>
+            </div>
+          </a>
+          <a class="card contact-info-item" href="mailto:rangerwolf835@gmail.com">
+            <div class="contact-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4z" stroke="none"/><path d="M22 6l-10 7L2 6"/><path d="M2 6h20v12H2z"/></svg>
+            </div>
+            <div>
+              <div class="label">Email</div>
+              <span class="value">rangerwolf835@gmail.com</span>
+            </div>
+          </a>
+          <a class="card contact-info-item" href="mailto:afnanyasar3@gmail.com">
+            <div class="contact-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4z" stroke="none"/><path d="M22 6l-10 7L2 6"/><path d="M2 6h20v12H2z"/></svg>
+            </div>
+            <div>
+              <div class="label">Alternate Email</div>
+              <span class="value">afnanyasar3@gmail.com</span>
+            </div>
+          </a>
+          <a class="card contact-info-item" href="https://github.com/yasar2008" target="_blank" rel="noopener">
+            <div class="contact-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.73.5.98 5.24.98 11.5c0 4.98 3.29 9.2 7.85 10.69.57.1.78-.25.78-.55v-1.94c-3.19.7-3.87-1.53-3.87-1.53-.52-1.34-1.28-1.7-1.28-1.7-1.04-.72.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.76 2.69 1.25 3.34.96.1-.75.4-1.25.73-1.54-2.55-.29-5.23-1.28-5.23-5.68 0-1.26.45-2.28 1.18-3.08-.12-.29-.51-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.24 2.76.12 3.05.74.8 1.18 1.82 1.18 3.08 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.07.78 2.16v3.2c0 .31.21.66.79.55A10.52 10.52 0 0 0 23 11.5C23 5.24 18.27.5 12 .5z"/></svg>
+            </div>
+            <div>
+              <div class="label">GitHub</div>
+              <span class="value">github.com/yasar2008</span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <form class="card reveal" id="contactForm">
+        <div class="form-group">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name" placeholder="John Doe" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Your Email</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Let's talk about..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center;">Send Message</button>
+        <p class="form-status" id="formStatus"></p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <div class="container">
+    <div class="footer-socials">
+      <a href="https://github.com/yasar2008" target="_blank" rel="noopener" aria-label="GitHub">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.73.5.98 5.24.98 11.5c0 4.98 3.29 9.2 7.85 10.69.57.1.78-.25.78-.55v-1.94c-3.19.7-3.87-1.53-3.87-1.53-.52-1.34-1.28-1.7-1.28-1.7-1.04-.72.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.76 2.69 1.25 3.34.96.1-.75.4-1.25.73-1.54-2.55-.29-5.23-1.28-5.23-5.68 0-1.26.45-2.28 1.18-3.08-.12-.29-.51-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.24 2.76.12 3.05.74.8 1.18 1.82 1.18 3.08 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.07.78 2.16v3.2c0 .31.21.66.79.55A10.52 10.52 0 0 0 23 11.5C23 5.24 18.27.5 12 .5z"/></svg>
+      </a>
+      <a href="mailto:rangerwolf835@gmail.com" aria-label="Email">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4z" stroke="none"/><path d="M22 6l-10 7L2 6"/><path d="M2 6h20v12H2z"/></svg>
+      </a>
+      <a href="tel:+916383475990" aria-label="Phone">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      </a>
+    </div>
+    <p>&copy; <span id="year"></span> S Afnan Yasar. Built with HTML, CSS & JavaScript.</p>
+  </div>
+</footer>
+
+<button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+<script src="main.js"></script>
+</body>
+</html>
