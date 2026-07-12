@@ -3,36 +3,24 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>S Afnan Yasar | Portfolio</title>
-<meta name="description" content="Portfolio of S Afnan Yasar - B.Tech CSE Student & Aspiring Developer">
+<title>About Me | S Afnan Yasar</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<!-- Animated preloader screen overlay -->
-<div id="preloader" class="preloader">
-  <div class="loader-box">
-    <div class="loader-title">BOOTING <span>SAY_SYS</span></div>
-    <div class="loader-progress-bg">
-      <div id="loaderProgressBar" class="loader-progress-bar"></div>
-    </div>
-    <div id="loaderStatus" class="loader-status">INITIALIZING SYSTEM... 0%</div>
-  </div>
-</div>
-
 <div id="scrollProgress" class="scroll-progress"></div>
 <canvas id="bgCanvas"></canvas>
 <div id="customCursor" class="custom-cursor"></div>
 <div id="customCursorRing" class="custom-cursor-ring"></div>
 
 <!-- ================= NAVBAR ================= -->
-<nav class="navbar" id="navbar">
+<nav class="navbar scrolled" id="navbar">
   <div class="container nav-inner">
     <a href="index.html" class="logo">SAY<span>.</span></a>
     <ul class="nav-links" id="navLinks">
-      <li><a href="index.html" class="nav-link active">Home</a></li>
-      <li><a href="about.html" class="nav-link">About</a></li>
+      <li><a href="index.html" class="nav-link">Home</a></li>
+      <li><a href="about.html" class="nav-link active">About</a></li>
       <li><a href="skills.html" class="nav-link">Skills</a></li>
       <li><a href="projects.html" class="nav-link">Projects</a></li>
       <li><a href="achievements.html" class="nav-link">Achievements</a></li>
@@ -44,28 +32,49 @@
   </div>
 </nav>
 
-<!-- ================= HERO ================= -->
-<header class="hero" id="home">
-  <div class="hero-grid"></div>
-  <div class="container hero-content">
-    <div class="hero-eyebrow reveal"><span class="dot"></span> Available for opportunities</div>
-    <div class="hero-avatar reveal">
-      <img src="profile.jpg" alt="S Afnan Yasar">
-    </div>
-    <h1 class="reveal">Hi, I'm <span class="highlight">S Afnan Yasar</span></h1>
-    <p class="hero-tagline mono reveal"><span id="typewriter"></span><span class="cursor">&nbsp;</span></p>
-    <p class="hero-location mono reveal">📍 Chennai, Tamil Nadu</p>
-    <p class="hero-objective reveal">
-      As a passionate first-year engineering student, I am eager to offer meaningful contributions to the
-      workplace by taking on responsibilities that aid team growth. I am driven to learn, adapt, and
-      develop a strong technical skillset.
-    </p>
-    <div class="hero-actions reveal">
-      <a href="projects.html" class="btn btn-primary">View Projects</a>
-      <a href="contact.html" class="btn btn-outline">Get In Touch</a>
+<!-- ================= ABOUT & EDUCATION ================= -->
+<section id="about" style="padding-top: 150px;">
+  <div class="container">
+    <span class="section-tag reveal">About</span>
+    <h2 class="section-title reveal">About Me & <span>Education</span></h2>
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <p>
+          I'm a first-year B.Tech Computer Science student based in Chennai, currently building my foundation
+          across programming, web development, and data-driven applications. I enjoy turning ideas into working
+          software — from backend database systems to interactive frontend experiences.
+        </p>
+        <p>
+          Outside of code, I bring creative skills like photography, photo editing, and poster design to the
+          table, and I'm fluent in four languages with basic proficiency in a fifth — which makes collaboration
+          and communication a strength of mine.
+        </p>
+      </div>
+
+      <div class="reveal">
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="year mono">Expected 2029</div>
+            <h4>B.Tech, Computer Science Engineering</h4>
+            <div class="school">SRM Institute of Science and Technology, Ramapuram — 1st Year</div>
+          </div>
+          <div class="timeline-item">
+            <div class="year mono">2025</div>
+            <h4>Class XII (CBSE)</h4>
+            <div class="school">Unity Public School, Kotturpuram</div>
+            <span class="score">70%</span>
+          </div>
+          <div class="timeline-item">
+            <div class="year mono">2023</div>
+            <h4>Class X (CBSE)</h4>
+            <div class="school">Unity Public School, Kotturpuram</div>
+            <span class="score">72%</span>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-</header>
+</section>
 
 <!-- ================= FOOTER ================= -->
 <footer>

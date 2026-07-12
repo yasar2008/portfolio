@@ -3,38 +3,26 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>S Afnan Yasar | Portfolio</title>
-<meta name="description" content="Portfolio of S Afnan Yasar - B.Tech CSE Student & Aspiring Developer">
+<title>Projects | S Afnan Yasar</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<!-- Animated preloader screen overlay -->
-<div id="preloader" class="preloader">
-  <div class="loader-box">
-    <div class="loader-title">BOOTING <span>SAY_SYS</span></div>
-    <div class="loader-progress-bg">
-      <div id="loaderProgressBar" class="loader-progress-bar"></div>
-    </div>
-    <div id="loaderStatus" class="loader-status">INITIALIZING SYSTEM... 0%</div>
-  </div>
-</div>
-
 <div id="scrollProgress" class="scroll-progress"></div>
 <canvas id="bgCanvas"></canvas>
 <div id="customCursor" class="custom-cursor"></div>
 <div id="customCursorRing" class="custom-cursor-ring"></div>
 
 <!-- ================= NAVBAR ================= -->
-<nav class="navbar" id="navbar">
+<nav class="navbar scrolled" id="navbar">
   <div class="container nav-inner">
     <a href="index.html" class="logo">SAY<span>.</span></a>
     <ul class="nav-links" id="navLinks">
-      <li><a href="index.html" class="nav-link active">Home</a></li>
+      <li><a href="index.html" class="nav-link">Home</a></li>
       <li><a href="about.html" class="nav-link">About</a></li>
       <li><a href="skills.html" class="nav-link">Skills</a></li>
-      <li><a href="projects.html" class="nav-link">Projects</a></li>
+      <li><a href="projects.html" class="nav-link active">Projects</a></li>
       <li><a href="achievements.html" class="nav-link">Achievements</a></li>
       <li><a href="contact.html" class="nav-link">Contact</a></li>
     </ul>
@@ -44,28 +32,49 @@
   </div>
 </nav>
 
-<!-- ================= HERO ================= -->
-<header class="hero" id="home">
-  <div class="hero-grid"></div>
-  <div class="container hero-content">
-    <div class="hero-eyebrow reveal"><span class="dot"></span> Available for opportunities</div>
-    <div class="hero-avatar reveal">
-      <img src="profile.jpg" alt="S Afnan Yasar">
-    </div>
-    <h1 class="reveal">Hi, I'm <span class="highlight">S Afnan Yasar</span></h1>
-    <p class="hero-tagline mono reveal"><span id="typewriter"></span><span class="cursor">&nbsp;</span></p>
-    <p class="hero-location mono reveal">📍 Chennai, Tamil Nadu</p>
-    <p class="hero-objective reveal">
-      As a passionate first-year engineering student, I am eager to offer meaningful contributions to the
-      workplace by taking on responsibilities that aid team growth. I am driven to learn, adapt, and
-      develop a strong technical skillset.
-    </p>
-    <div class="hero-actions reveal">
-      <a href="projects.html" class="btn btn-primary">View Projects</a>
-      <a href="contact.html" class="btn btn-outline">Get In Touch</a>
+<!-- ================= PROJECTS ================= -->
+<section id="projects" style="padding-top: 150px;">
+  <div class="container">
+    <span class="section-tag reveal">Portfolio</span>
+    <h2 class="section-title reveal">Featured <span>Projects</span></h2>
+    <div class="projects-grid">
+
+      <div class="card project-card reveal">
+        <div class="project-number mono">01</div>
+        <h3>Employee Management System</h3>
+        <p>A backend database management application built to efficiently organize, store, and retrieve
+          employee records for an organization.</p>
+        <div class="project-tags">
+          <span>Python</span><span>MySQL</span>
+        </div>
+        <a href="https://github.com/yasar2008" target="_blank" rel="noopener" class="project-link">View on GitHub →</a>
+      </div>
+
+      <div class="card project-card reveal">
+        <div class="project-number mono">02</div>
+        <h3>Anthenafit Readiness</h3>
+        <p>A full-stack web application handling data processing and readiness metrics, built with a React
+          frontend and a Python backend.</p>
+        <div class="project-tags">
+          <span>React</span><span>Python</span><span>Full-Stack</span>
+        </div>
+        <a href="https://github.com/yasar2008" target="_blank" rel="noopener" class="project-link">View on GitHub →</a>
+      </div>
+
+      <div class="card project-card reveal">
+        <div class="project-number mono">03</div>
+        <h3>Mock IPL Auction</h3>
+        <p>A frontend web application simulating a live cricket auction environment, built with pure HTML,
+          CSS, and JavaScript.</p>
+        <div class="project-tags">
+          <span>HTML</span><span>CSS</span><span>JavaScript</span>
+        </div>
+        <a href="https://github.com/yasar2008" target="_blank" rel="noopener" class="project-link">View on GitHub →</a>
+      </div>
+
     </div>
   </div>
-</header>
+</section>
 
 <!-- ================= FOOTER ================= -->
 <footer>
