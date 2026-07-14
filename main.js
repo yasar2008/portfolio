@@ -294,7 +294,7 @@ if (canvas) {
           ctx.beginPath();
           ctx.moveTo(particlesArray[i].x, particlesArray[i].y);
           ctx.lineTo(particlesArray[j].x, particlesArray[j].y);
-          ctx.strokeStyle = `rgba(16, 185, 129, ${opacity})`;
+          ctx.strokeStyle = `rgba(0, 0, 0, ${opacity * 0.75})`;
           ctx.lineWidth = 0.8;
           ctx.stroke();
         }
@@ -310,7 +310,7 @@ if (canvas) {
           ctx.beginPath();
           ctx.moveTo(particlesArray[i].x, particlesArray[i].y);
           ctx.lineTo(mouse.x, mouse.y);
-          ctx.strokeStyle = `rgba(255, 0, 127, ${opacity})`;
+          ctx.strokeStyle = `rgba(255, 0, 127, ${opacity * 1.5})`;
           ctx.lineWidth = 0.8;
           ctx.stroke();
         }
