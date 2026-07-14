@@ -331,23 +331,49 @@ if (backToTopBtn) {
   });
 }
 
-// ---------- Contact form (mailto handler) ----------
+// ---------- Contact form (Formspree API handler) ----------
 const form = document.getElementById('contactForm');
 const formStatus = document.getElementById('formStatus');
 
 if (form) {
-  form.addEventListener('submit', (e) => {
+  form.addEventListener('submit', async (e) => {
     e.preventDefault();
     const name = document.getElementById('name').value.trim();
     const email = document.getElementById('email').value.trim();
     const message = document.getElementById('message').value.trim();
 
-    const subject = encodeURIComponent(`Portfolio Contact from ${name}`);
-    const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`);
-    window.location.href = `mailto:rangerwolf835@gmail.com?subject=${subject}&body=${body}`;
+    if (formStatus) {
+      formStatus.textContent = 'Sending message...';
+      formStatus.style.color = 'var(--accent-pink)';
+    }
 
-    if (formStatus) formStatus.textContent = 'Opening your email client...';
-    form.reset();
+    try {
+      const response = await fetch('https://formspree.io/f/mykrzgkl', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify({ name, email, message })
+      });
+
+      if (response.ok) {
+        if (formStatus) {
+          formStatus.textContent = '✓ Thank you! Your message has been sent successfully.';
+          formStatus.style.color = 'var(--accent-emerald)';
+        }
+        form.reset();
+      } else {
+        const data = await response.json();
+        throw new Error(data.error || 'Failed to send message.');
+      }
+    } catch (error) {
+      console.error('Formspree submit error:', error);
+      if (formStatus) {
+        formStatus.textContent = '✗ Error sending message. Please try again.';
+        formStatus.style.color = 'var(--accent-pink)';
+      }
+    }
   });
 }
 
